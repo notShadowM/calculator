@@ -3,6 +3,7 @@ import "./Style.css";
 
 class Btns extends Component {
   state = {
+    zero: true,
     firstInput: false,
     secInput: false,
     operator: "",
@@ -26,6 +27,7 @@ class Btns extends Component {
         showing: "0",
         done: false,
         spare: "",
+        zero: true,
       };
     });
   };
@@ -111,13 +113,14 @@ class Btns extends Component {
   };
 
   percentage = () => {
-    const { firstInput, secInput, gotOperator, done } = this.state;
+    const { firstInput, secInput, gotOperator, done, zero } = this.state;
 
     if (
       firstInput === false &&
       secInput === false &&
       gotOperator === false &&
-      done === false
+      done === false &&
+      zero === false
     ) {
       //   console.log("hello");
 
@@ -168,6 +171,7 @@ class Btns extends Component {
           showing: prev.first + name,
           done: false,
           gotOperator: false,
+          zero: false,
         };
       });
     } else if (secInput === false) {
