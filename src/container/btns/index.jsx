@@ -111,7 +111,7 @@ class Btns extends Component {
   };
 
   percentage = () => {
-    const { firstInput, secInput, gotOperator, first, sec, done } = this.state;
+    const { firstInput, secInput, gotOperator, done } = this.state;
 
     if (
       firstInput === false &&
