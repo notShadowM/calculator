@@ -1,6 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Chathura:wght@800&display=swap%22);
+
 *{
     user-select: none;
 }
+
 body{
     background: #E5E5E5;
 }
@@ -19,11 +22,13 @@ body{
     width: 95%;
     height: 100px;
     text-align: right;
-    padding-top: 30px;
+    padding-top: 10px;
+
+    font-family: 'Chathura' ,sans-serif;
 
     font-style: normal;
     font-weight: normal;
-    font-size: 100px;
+    font-size: 125px;
     line-height: 180px;
     /* display: flex;
     align-items: center;
